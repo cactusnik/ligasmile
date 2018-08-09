@@ -1,0 +1,36 @@
+.slider.slider_main {
+
+  .slider__item {
+    position: relative;
+  }
+
+  .slider__img {
+    max-width: 100%;
+  }
+
+  .slider__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 55%;
+    padding: 40px 35px 30px;
+    color: #ffffff;
+  }
+
+  .slider__title {
+    margin-bottom: 10px;
+    font-size: 58.53px;
+    font-family: "MyRoboto";
+    font-weight: 600;
+    text-shadow: 0px 4px 3px rgba(4, 5, 5, 0.8);
+  }
+
+  .sldier__discription {
+    padding-left: 80px;
+    font-size: 25px;
+    line-height: 33.33px;
+    font-weight: 300;
+    text-shadow: 0px 4px 4px rgba(4, 5, 5, 0.48);
+  }
+
+}

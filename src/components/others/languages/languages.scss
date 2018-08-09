@@ -1,0 +1,39 @@
+.languages {
+  margin-top: 30px;
+
+  .languages__list {
+    list-style: none;
+  }
+
+  .languages__item {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .languages__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: $color-secondary;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 12.5px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+    box-shadow: 4.951px 0.696px 6px 0px rgba(4, 5, 5, 0.33);
+    text-transform: uppercase;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  .languages__link_active {
+    background-color: $color-accent;
+  }
+}

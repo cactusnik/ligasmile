@@ -1,0 +1,33 @@
+.info-contact {
+
+  .info-contact__phone, .info-contact__email {
+    padding: 0 30px;
+    color: #ffffff;
+    font-size: 18.5px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  .info-contact__phone {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 1px;
+      height: 13px;
+      margin: auto;
+      background-color: #ffffff;
+    }
+  }
+}
