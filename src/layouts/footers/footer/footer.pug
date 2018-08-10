@@ -1,3 +1,13 @@
-include ./mixin-footer
-
-+footer()
+footer.footer
+	.footer__logo-wrap
+		img.footer__logo(src="images/logo.png" alt="Лого Лига Смеха")
+	.footer__nav
+		include ../../../components/navs/nav_footer/nav_footer
+	.footer__socials
+		include ../../../components/others/socials/socials
+	.footer__contact
+		.info-contact.info-contact_footer
+			a.info-contact__phone(href='tel:380938875422') ﻿+38 (093) 887 54 22
+			a.info-contact__email(href="mailto:event@ligasmeha.com") event@ligasmeha.com
+	.footer__creator &copy; Designed by
+			a.footer__creator-link(href="#") Jul Mas studio

@@ -3,69 +3,26 @@ extends ../../layouts/layout-main/layout-main
 block content
 	include ../../layouts/headers/header/header
 	section.about
+		h2.about__title
+			span.about__title-decore
+			span.about__title-text ПРО НАС
+			span.about__title-decore
 		.about__container
-			h2.about__title ПРО НАС
 			p.about__text «Ліга сміху» (Чемпіонат України з гумору) – телевізійний гумористичний проект створений у 2015 році студією «Квартал 95» і компанією Drive Production. Ведучий шоу – Володимир Зеленський
 				| Редактори шоу – Андрій Чивуріна і Чингіз Мазінов «Ліга сміху» – міжнародний чемпіонат гумору, який об’єднує всю країну. У чемпіонаті беруть участь молодіжні команди зі всієї України, а також з інших країн. Вони змагаються в майстерності розсмішити публіку і журі за всяку ціну. У цій битві всі засоби хороші, окрім нудних і несмішних: дотепні та актуальні жарти, забавні скетчі, буфонада, розіграші та пародії.
-			.about__content Сезон гри триває протягом року на вибування, нічия у грі виключена, будь-який спір вирішує батл. Починають сезон 14 команд, у фіналі зустрічаються дві. Судійство здійснюють сім зірок шоу-бізнесу. Вони ж виконують роль граючих тренерів.
+		.about__content
+			p.about__content-text Сезон гри триває протягом року на вибування, нічия у грі виключена, будь-який спір вирішує батл. Починають сезон 14 команд, у фіналі зустрічаються дві. Судійство здійснюють сім зірок шоу-бізнесу. Вони ж виконують роль граючих тренерів.
 				| Сезон стартує з відбіркового Фестивалю в Одесі.
 				| Кількість учасників – не обмежена.
+		.about__container
 			.about__popup
 				.about__popup-title ЗВ’ЯЗАТИСЬ
-					.about__button дзвінок
-					.about__button e-mail
+				.about__button.about__button_phone дзвінок
+				.about__button.about__button_email e-mail
 	section.leading
-		.leading__container
-			h2.leading__title
+		h2.leading__title ВЕДУЧІ
+		.leading__container.container
 			.leading__content
-				.swiper-container.slider.slider_leading
-					.swiper-wrapper.slider__list
-						.swiper-slide.slider__item
-							.slider__img-wrap
-								img.slider__img(src='images/slider-leading.png')
-							.slider__title
-
-					.swiper-pagination
-					.swiper-button-prev
-					.swiper-button-next
-				a.leading__more(href='#') УСІ ВЕДУЧІ
-	footer.footer
-		.footer__row
-			.footer__logo-wrap
-				img.footer__logo(href="images/logo.png")
-		.footer__row
-			.footer__nav
-				.nav.nav_footer
-					ul.nav__list
-						li.nav__item
-							a.nav__link
-						li.nav__item
-							a.nav__link
-						li.nav__item
-							a.nav__link
-						li.nav__item
-							a.nav__link
-		.footer__row
-			.footer__socials
-				.socials
-					ul.socials__list
-						li.socials__item
-							a.socials__link
-								.socials__img-wrap
-									img.socials__img( alt='social')
-						li.socials__item
-							a.socials__link
-								.socials__img-wrap
-									img.socials__img( alt='social')
-						li.socials__item
-							a.socials__link
-								.socials__img-wrap
-									img.socials__img( alt='social')
-		.footer__row
-			.footer__contact
-				a.footer__phone(href='tel:380938875422') ﻿+38 (093) 887 54 22
-				a.footer__email(href="mailto:event@ligasmeha.com") event@ligasmeha.com
-		.footer__row
-			.footer__creator
-				.creator &copy; Designed by
-					a.creator__link(href="#") Jul Mas studio
+				include ../../components/sliders/slider_leading/slider_leading
+				a.button.button__secondary.button__block.leading__more(href='#') УСІ ВЕДУЧІ
+	include ../../layouts/footers/footer/footer

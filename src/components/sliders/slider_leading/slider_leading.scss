@@ -1,0 +1,58 @@
+.slider.slider_leading {
+  .slider__container {
+
+  }
+
+  .slider__img-wrap {
+    padding-bottom: 26px;
+  }
+
+  .slider__img {
+    min-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .slider__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: #510c02;
+    color: #ffffff;
+    font-size: 33.33px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .slider__item {
+    position: relative;
+  }
+
+  .slider__btn {
+    position: absolute;
+    bottom: 32px;
+    z-index: 2;
+    display: inline-block;
+    width: 20px;
+    height: 57px;
+    cursor: pointer;
+  }
+
+  .slider__btn_prev {
+    left: 13px;
+    @include bg($leading-arrow-prev);
+    background-repeat: no-repeat;
+  }
+
+  .slider__btn_next {
+    right: 13px;
+    @include bg($leading-arrow-next);
+    background-repeat: no-repeat;
+  }
+}

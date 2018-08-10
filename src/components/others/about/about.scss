@@ -1,0 +1,139 @@
+.about {
+  padding: 90px 0 75px;
+  background-image: url('../images/about-bg.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+
+  .about__content {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    margin-left: auto;
+
+    &:after {
+      content: 'EVENT';
+      position: absolute;
+      right: 0;
+      bottom: -90px;
+      z-index: -1;
+
+      color: #ebebeb;
+      font-size: 200px;
+      line-height: 200px;
+      letter-spacing: 0.075em;
+    }
+  }
+
+  .about__content-text {
+    position: relative;
+    padding: 45px 37% 35px 55px;
+    box-shadow: -3.756px 7.064px 38px 0px rgba(4, 5, 5, 0.96);
+    color: #131725;
+    font-size: 20.83px;
+    line-height: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .about__container {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  .about__popup {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 360px;
+    padding: 60px 50px;
+    margin-left: auto;
+    margin-top: 55px;
+    background-color: $color-accent;
+    box-shadow: 10.404px 9.368px 21px 0px rgba(4, 5, 5, 0.66);
+  }
+  .about__title {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .about__title-text {
+    padding: 0 50px;
+    font-size: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .about__title-decore {
+    flex-grow: 1;
+
+    &:last-child {
+      background-color: rgb(31, 35, 46);
+      opacity: 0.102;
+    }
+  }
+
+  .about__text {
+    color: $color-text;
+    font-size: 16.67px;
+    line-height: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .about__popup-title {
+    margin-bottom: 45px;
+    color: #ffffff;
+    font-size: 29px;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .about__button {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+    background-color: $color-secondary;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 85px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+    text-align: left;
+    text-transform: lowercase;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 45px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .about__button_phone {
+    &:before {
+      @include bg($call-icon);
+    }
+  }
+  
+  .about__button_email {
+    padding-left: 130px;
+    background-color: #600e02;
+
+    &:before {
+      @include bg($mail-icon);
+    }
+  }
+}

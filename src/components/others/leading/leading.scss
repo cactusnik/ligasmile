@@ -1,0 +1,30 @@
+.leading {
+  padding-top: 90px;
+  padding-bottom: 110px;
+  background-image: url('../images/header-bg.png');
+
+  .leading__container {
+    background-image: url('../images/leading-bg.png');
+    background-position: center 45px;
+    background-repeat: no-repeat;
+  }
+
+  .leading__content {
+    width: 644px;
+    margin: 0 auto;
+  }
+
+  .leading__title {
+    margin-bottom: 55px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .leading__more {
+    margin-top: 12px;
+  }
+}

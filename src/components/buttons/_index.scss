@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20.83px;
+  line-height: 47px;
+  font-family: "MyRoboto";
+  font-weight: 300;
+  box-shadow: 0px 9px 18px 0px rgba(4, 5, 5, 0.36);
+  text-align: center;
+  text-decoration: none;
+}
+
+.button__block {
+  display: block;
+}
+
+.button__secondary {
+   background-color: $color-secondary;
+   border: 1px solid #2c3039;
+ }
+
+.button__accent {
+  background-color: $color-accent;
+  border: 1px solid #7e1c0e;
+}
+
+.button__padding {
+  padding: 0 183px;
+}

@@ -2,10 +2,13 @@
 
   .slider__item {
     position: relative;
+    margin: 20px;
+    box-shadow: 0px 7px 16px 0px rgba(4, 5, 5, 0.48);
   }
 
   .slider__img {
     max-width: 100%;
+    width: 100%;
   }
 
   .slider__content {

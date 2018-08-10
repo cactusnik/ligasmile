@@ -1,4 +1,8 @@
-$moon: 0px 0px 0px 0px 24px 24px 24px 24px '../images/sprites/sprite.png';
+$call-icon: 0px 0px 0px 0px 64px 67px 155px 149px '../images/sprites/sprite.png';
+$leading-arrow-next: 0px 92px 0px -92px 20px 57px 155px 149px '../images/sprites/sprite.png';
+$leading-arrow-prev: 45px 92px -45px -92px 20px 57px 155px 149px '../images/sprites/sprite.png';
+$mail-icon: 89px 0px -89px 0px 66px 54px 155px 149px '../images/sprites/sprite.png';
+$moon: 90px 92px -90px -92px 24px 24px 155px 149px '../images/sprites/sprite.png';
 
 @mixin sprite-position($sprite) {
 $sprite-offset-x: nth($sprite, 3);

@@ -1,2 +1,5 @@
+const common = require('../bases/common');
 
-console.log('11111');
+document.addEventListener('DOMContentLoaded', function() {
+   common.init();
+});
