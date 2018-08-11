@@ -1,0 +1,26 @@
+.modal.modal_phone {
+
+  .modal__header {
+    text-align: center;
+  }
+
+  .modal__link {
+    display: inline-block;
+    color: #ffffff;
+    margin-bottom: 32px;
+    font-size: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .modal__text {
+    margin-bottom: 32px;
+    font-size: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+    text-transform: lowercase;
+  }
+}

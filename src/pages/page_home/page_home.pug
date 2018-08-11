@@ -17,12 +17,14 @@ block content
 		.about__container
 			.about__popup
 				.about__popup-title ЗВ’ЯЗАТИСЬ
-				.about__button.about__button_phone дзвінок
-				.about__button.about__button_email e-mail
+				.about__button.about__button_phone.js-popup-modal(href='#modal-phone') дзвінок
+				.about__button.about__button_email.js-popup-modal(href='#modal-email') e-mail
 	section.leading
 		h2.leading__title ВЕДУЧІ
 		.leading__container.container
 			.leading__content
 				include ../../components/sliders/slider_leading/slider_leading
 				a.button.button__secondary.button__block.leading__more(href='#') УСІ ВЕДУЧІ
+	include ../../components/modals/modal_email/modal_email
+	include ../../components/modals/modal_phone/modal_phone
 	include ../../layouts/footers/footer/footer

@@ -1,21 +1,21 @@
 .about {
-  padding: 90px 0 75px;
+  padding: 81px 0 75px;
   background-image: url('../images/about-bg.png');
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: cover;
+  background-size: contain;
 
   .about__content {
     position: relative;
     z-index: 2;
-    width: 70%;
+    width: 69%;
     margin-left: auto;
 
     &:after {
       content: 'EVENT';
       position: absolute;
-      right: 0;
-      bottom: -90px;
+      right: 12px;
+      bottom: -100px;
       z-index: -1;
 
       color: #ebebeb;
@@ -27,7 +27,7 @@
 
   .about__content-text {
     position: relative;
-    padding: 45px 37% 35px 55px;
+    padding: 40px 38.4% 35px 55px;
     box-shadow: -3.756px 7.064px 38px 0px rgba(4, 5, 5, 0.96);
     color: #131725;
     font-size: 20.83px;
@@ -38,7 +38,7 @@
   }
 
   .about__container {
-    max-width: 940px;
+    max-width: 930px;
     margin: 0 auto;
   }
 
@@ -55,7 +55,7 @@
   }
   .about__title {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 
   .about__title-text {
@@ -107,6 +107,7 @@
     font-weight: 300;
     text-align: left;
     text-transform: lowercase;
+    cursor: pointer;
 
     &:last-child {
       margin-bottom: 0;

@@ -21,5 +21,12 @@
     border-radius: 50%;
     color: #ffffff;
     font-size: 30px;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+
+    &:hover {
+      border-color: $color-secondary;
+      color: $color-secondary;
+    }
   }
 }

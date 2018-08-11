@@ -1,0 +1,28 @@
+.modal {
+  max-width: 860px;
+  padding: 50px;
+  margin: 0 auto;
+  color: #ffffff;
+
+  .modal__container {
+    position: relative;
+  }
+
+  .modal__title {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .modal__close {
+    position: absolute;
+    right: -45px;
+    top: -45px;
+    width: 35px;
+    height: 35px;
+    @include bg($modal-x);
+  }
+}

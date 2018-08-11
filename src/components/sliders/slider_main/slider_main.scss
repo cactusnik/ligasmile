@@ -1,8 +1,8 @@
 .slider.slider_main {
+  position: relative;
 
   .slider__item {
     position: relative;
-    margin: 20px;
     box-shadow: 0px 7px 16px 0px rgba(4, 5, 5, 0.48);
   }
 
@@ -13,15 +13,18 @@
 
   .slider__content {
     position: absolute;
-    bottom: 0;
+    bottom: 58px;
     left: 0;
+    z-index: 3;
     max-width: 55%;
+    background-color: rgba(255, 255, 255, 0.071);
+    box-shadow: inset -14.322px 15.358px 21px 0px rgba(4, 4, 4, 0.08);
     padding: 40px 35px 30px;
     color: #ffffff;
   }
 
   .slider__title {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     font-size: 58.53px;
     font-family: "MyRoboto";
     font-weight: 600;
@@ -32,8 +35,35 @@
     padding-left: 80px;
     font-size: 25px;
     line-height: 33.33px;
+    font-family: 'MyRoboto';
     font-weight: 300;
     text-shadow: 0px 4px 4px rgba(4, 5, 5, 0.48);
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    margin: auto;
+    width: 35px;
+    height: 100px;
+    display: block;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .slider__btn_prev {
+    left: 35px;
+    @include bg($main-arrow-prev);
+  }
+
+  .slider__btn_next {
+    right: 35px;
+    @include bg($main-arrow-next);
   }
 
 }
