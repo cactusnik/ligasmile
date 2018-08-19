@@ -28,6 +28,14 @@
     font-family: 'MyRoboto';
     font-weight: 300;
     text-align: center;
+
+    @media screen and (max-width: 1600px) {
+      height: 90px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
   }
 
   .slider__item {
@@ -42,6 +50,10 @@
     width: 20px;
     height: 57px;
     cursor: pointer;
+
+    @media screen and (max-width: 1600px) {
+      bottom: 17px;
+    }
   }
 
   .slider__btn_prev {

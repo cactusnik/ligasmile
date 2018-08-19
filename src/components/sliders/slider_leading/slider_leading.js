@@ -6,8 +6,8 @@ const sliderMainSettings = {
     loop: true,
     grabCursor: true,
     navigation: {
-        nextEl: document.querySelector(".slider_leading .slider__btn_prev"),
-        prevEl: document.querySelector(".slider_leading .slider__btn_next"),
+        nextEl: document.querySelector(".slider_leading .slider__btn_next"),
+        prevEl: document.querySelector(".slider_leading .slider__btn_prev"),
     },
 };
 

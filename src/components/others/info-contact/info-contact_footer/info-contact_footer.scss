@@ -1,0 +1,18 @@
+.info-contact.info-contact_footer {
+
+  .info-contact__phone, .info-contact__email {
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+
+  .info-contact__phone {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

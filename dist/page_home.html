@@ -18,14 +18,23 @@
 						<h1 class="header__title">ЛІГА СМІХУ <strong>EVENT</strong></h1>
 						<h2 class="header__subtitle">Замов улюблену команду на свій захід</h2>
 					</div>
-					<div class="header__nav">
-						<nav class="nav nav_main">
+					<div class="header__nav"><i class="header__toggle fa fa-bars"></i>
+						<nav class="nav nav_main"><i class="nav__close fa fa-times"></i>
 							<ul class="nav__list">
 								<li class="nav__item"><a class="nav__link" href="#">ГОЛОВНА</a></li>
 								<li class="nav__item"><a class="nav__link" href="#">КОМАНДИ</a></li>
 								<li class="nav__item"><a class="nav__link" href="#">ВЕДУЧІ</a></li>
 								<li class="nav__item"><a class="nav__link" href="#">КОНТАКТИ</a></li>
 							</ul>
+							<div class="nav__languages">
+								<div class="languages">
+									<ul class="languages__list">
+										<li class="languages__item"><a class="languages__link languages__link_active">укр</a></li>
+										<li class="languages__item"><a class="languages__link">рус</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="info-contact info-contact_nav"><a class="info-contact__phone" href="tel:380938875422">﻿+38 (093) 887 54 22</a><a class="info-contact__email" href="mailto:event@ligasmeha.com">event@ligasmeha.com</a></div>
 						</nav>
 					</div>
 				</div>
@@ -86,7 +95,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__decor"></div>
+			<!--.header__decor-->
 		</header>
 		<section class="about">
 			<h2 class="about__title"><span class="about__title-decore"></span><span class="about__title-text">ПРО НАС</span><span class="about__title-decore"></span></h2>
@@ -195,30 +204,32 @@
 			</div>
 		</div>
 		<footer class="footer">
-			<div class="footer__logo-wrap"><img class="footer__logo" src="images/logo.png" alt="Лого Лига Смеха"></div>
-			<div class="footer__nav">
-				<div class="nav nav_footer">
-					<ul class="nav__list">
-						<li class="nav__item"><a class="nav__link">ГОЛОВНА</a></li>
-						<li class="nav__item"><a class="nav__link">КОМАНДИ</a></li>
-						<li class="nav__item"><a class="nav__link">ВЕДУЧІ</a></li>
-						<li class="nav__item"><a class="nav__link">КОНТАКТИ</a></li>
-					</ul>
+			<div class="footer__container container">
+				<div class="footer__logo-wrap"><img class="footer__logo" src="images/logo.png" alt="Лого Лига Смеха"></div>
+				<div class="footer__nav">
+					<div class="nav nav_footer">
+						<ul class="nav__list">
+							<li class="nav__item"><a class="nav__link">ГОЛОВНА</a></li>
+							<li class="nav__item"><a class="nav__link">КОМАНДИ</a></li>
+							<li class="nav__item"><a class="nav__link">ВЕДУЧІ</a></li>
+							<li class="nav__item"><a class="nav__link">КОНТАКТИ</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="footer__socials">
-				<div class="socials">
-					<ul class="socials__list">
-						<li class="socials__item"><a class="socials__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li class="socials__item"><a class="socials__link"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-						<li class="socials__item"><a class="socials__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					</ul>
+				<div class="footer__socials">
+					<div class="socials">
+						<ul class="socials__list">
+							<li class="socials__item"><a class="socials__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li class="socials__item"><a class="socials__link"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+							<li class="socials__item"><a class="socials__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
 				</div>
+				<div class="footer__contact">
+					<div class="info-contact info-contact_footer"><a class="info-contact__phone" href="tel:380938875422">﻿+38 (093) 887 54 22</a><a class="info-contact__email" href="mailto:event@ligasmeha.com">event@ligasmeha.com</a></div>
+				</div>
+				<div class="footer__creator">&copy; Designed by<a class="footer__creator-link" href="#">Jul Mas studio</a></div>
 			</div>
-			<div class="footer__contact">
-				<div class="info-contact info-contact_footer"><a class="info-contact__phone" href="tel:380938875422">﻿+38 (093) 887 54 22</a><a class="info-contact__email" href="mailto:event@ligasmeha.com">event@ligasmeha.com</a></div>
-			</div>
-			<div class="footer__creator">&copy; Designed by<a class="footer__creator-link" href="#">Jul Mas studio</a></div>
 		</footer>
 		<script src="js/app.js"></script>
 	</body>

@@ -4,9 +4,18 @@ const Swiper = require('swiper/dist/js/swiper.min');
 const sliderMainSettings = {
     loop: true,
     navigation: {
-        nextEl: document.querySelector(".slider_main .slider__btn_prev"),
-        prevEl: document.querySelector(".slider_main .slider__btn_next"),
+        nextEl: document.querySelector(".slider_main .slider__btn_next"),
+        prevEl: document.querySelector(".slider_main .slider__btn_prev"),
     },
+    breakpoints: {
+        // when window width is <= 1200px
+        1200: {
+            navigation: {
+                nextEl: '',
+                prevEl: '',
+            }
+        }
+    }
 };
 
 function init() {

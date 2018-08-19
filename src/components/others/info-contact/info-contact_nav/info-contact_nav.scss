@@ -1,0 +1,23 @@
+.info-contact.info-contact_nav {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .info-contact__phone, .info-contact__email {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .info-contact__phone {
+    &:after {
+      content: none;
+    }
+  }
+}

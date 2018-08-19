@@ -3,12 +3,20 @@
 
   .slider__item {
     position: relative;
-    box-shadow: 0px 7px 16px 0px rgba(4, 5, 5, 0.48);
   }
 
   .slider__img {
     max-width: 100%;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      min-height: 50vh;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 480px) {
+      min-height: initial;
+    }
   }
 
   .slider__content {
@@ -17,10 +25,27 @@
     left: 0;
     z-index: 3;
     max-width: 55%;
-    background-color: rgba(255, 255, 255, 0.071);
-    box-shadow: inset -14.322px 15.358px 21px 0px rgba(4, 4, 4, 0.08);
     padding: 40px 35px 30px;
     color: #ffffff;
+
+    @media screen and (max-width: 1600px) {
+      bottom: 0;
+      max-width: 70%;
+      padding: 30px;
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: initial;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 5px 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      position: relative;
+      top: -38px;
+    }
   }
 
   .slider__title {
@@ -29,6 +54,18 @@
     font-family: "MyRoboto";
     font-weight: 600;
     text-shadow: 0px 4px 3px rgba(4, 5, 5, 0.8);
+
+    @media screen and (max-width: 992px) {
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 
   .sldier__discription {
@@ -38,6 +75,21 @@
     font-family: 'MyRoboto';
     font-weight: 300;
     text-shadow: 0px 4px 4px rgba(4, 5, 5, 0.48);
+
+    @media screen and (max-width: 992px) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-left: 30px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding-left: 0;
+    }
   }
 
   .slider__btn {
@@ -54,6 +106,10 @@
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
   }
 
   .slider__btn_prev {

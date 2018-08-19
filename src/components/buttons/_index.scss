@@ -8,6 +8,10 @@
   box-shadow: 0px 9px 18px 0px rgba(4, 5, 5, 0.36);
   text-align: center;
   text-decoration: none;
+
+  &:hover {
+    box-shadow: 0px 3px 5px 0px rgba(4, 5, 5, 0.36);
+  }
 }
 
 .button__block {
@@ -26,4 +30,13 @@
 
 .button__padding {
   padding: 0 183px;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 150px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 0;
+    width: 100%;
+  }
 }

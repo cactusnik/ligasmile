@@ -1,8 +1,20 @@
 .languages {
   margin-top: 30px;
 
+  @media screen and (max-width: 1600px) {
+    margin-top: 0;
+  }
+
   .languages__list {
     list-style: none;
+
+    @media screen and (max-width: 1600px) {
+      display: flex;
+    }
+
+    @media screen and (max-width: 768px){
+      justify-content: center;
+    }
   }
 
   .languages__item {
@@ -10,6 +22,15 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 1600px) {
+      margin-bottom: 0;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 
@@ -27,6 +48,7 @@
     font-weight: 300;
     box-shadow: 4.951px 0.696px 6px 0px rgba(4, 5, 5, 0.33);
     text-transform: uppercase;
+    cursor: pointer;
 
     &:hover {
       font-weight: 600;
