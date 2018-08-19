@@ -1,0 +1,87 @@
+.popup {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 360px;
+  padding: 60px 50px;
+  background-color: $color-accent;
+  box-shadow: 10.404px 9.368px 21px 0px rgba(4, 5, 5, 0.66);
+
+  @media screen and (max-width: 1600px) {
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 30px;
+  }
+
+  .popup__title {
+    margin-bottom: 45px;
+    color: #ffffff;
+    font-size: 29px;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1600px) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .popup__button {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+    background-color: $color-secondary;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 85px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+    text-align: left;
+    text-transform: lowercase;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 45px;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &:hover {
+      background-color: #600e02;
+    }
+
+    @media screen and (max-width: 1600px) {
+      line-height: 75px;
+    }
+  }
+
+  .popup__button_phone {
+    &:before {
+      @include bg($call-icon);
+    }
+  }
+
+  .popup__button_email {
+    padding-left: 130px;
+
+    &:before {
+      @include bg($mail-icon);
+    }
+  }
+}

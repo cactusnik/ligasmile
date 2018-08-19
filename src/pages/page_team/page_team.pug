@@ -1,0 +1,22 @@
+extends ../../layouts/layout-main/layout-main
+
+block content
+	.page.page_team
+		include ../../layouts/headers/header_other/header_other
+		main.page__main.container
+			.page__container
+				.page__content
+					.page__header
+						.page__breadcrumbs
+							include ../../components/others/breadcrumbs/breadcrumbs
+						.page__leading-inner
+							include ../../components/others/team-inner/team-inner
+					.page__row
+						h2.page__title ФОТО
+						include ../../components/others/photos/photos
+					.page__row
+						h2.page__title ВІДЕО
+						include ../../components/others/videos/videos
+	include ../../components/modals/modal_email/modal_email
+	include ../../components/modals/modal_phone/modal_phone
+	include ../../layouts/footers/footer/footer

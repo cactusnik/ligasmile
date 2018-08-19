@@ -30,22 +30,25 @@
 
   .nav__item {
     width: 220px;
-    box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
 
     &:nth-child(1) {
-/*        background-color: rgb(119, 15, 0);*/
+        background-color: rgb(119, 15, 0);
+        box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
     }
 
     &:nth-child(2) {
-/*        background-color: rgb(111, 16, 2);*/
+        background-color: rgb(111, 16, 2);
+        box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
     }
 
     &:nth-child(3) {
-/*        background-color: rgba(96, 14, 2, 0.1);*/
+        background-color: rgb(96, 14, 2);
+        box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
     }
 
     &:nth-child(4) {
-/*        background-color: rgb(81, 12, 2);*/
+        background-color: rgb(81, 12, 2);
+        box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
     }
 
     @media screen and (max-width: 1600px) {

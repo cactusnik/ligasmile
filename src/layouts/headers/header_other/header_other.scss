@@ -1,0 +1,21 @@
+.header.header_other {
+  background-image: none;
+
+  .header__content {
+    padding: 0;
+  }
+
+  .header__container {
+    padding-bottom: 0;
+  }
+
+  .header__info-lang {
+
+    @media screen and (max-width: 1600px) {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+    }
+  }
+}

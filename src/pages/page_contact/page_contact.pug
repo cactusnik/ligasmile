@@ -1,0 +1,20 @@
+extends ../../layouts/layout-main/layout-main
+
+block content
+	.page.page_contact
+		include ../../layouts/headers/header_other/header_other
+		main.page__main.container
+			.page__container
+				.page__content
+					p.page__text У кожній грі команди представляють один основний конкурс (об’ємне полотно), в якому бере участь тренер. Журі оцінює виступ команди вставанням. Кожне вставання – 1 бал. Максимально команда може отримати 6 балів, так як свою команду тренер не оцінює. Після основного конкурсу команди з нижньої частини турнірної таблиці грають батл, в результаті якого сезон покидає одна команда.
+					.page__contacts
+						.page__contact Телефон:
+							a(href="tel:380938875422") +38 (093) 887 54 22
+						.page__contact E-mail:
+							a(href="mailto:event@ligasmeha.com") event@ligasmeha.com
+					.page__popup
+						include ../../components/others/popup/popup_contact/popup_contact
+
+		include ../../components/modals/modal_email/modal_email
+		include ../../components/modals/modal_phone/modal_phone
+		include ../../layouts/footers/footer/footer

@@ -1,0 +1,101 @@
+.team-inner {
+
+  .team-inner__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+    font-size: 42px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .team-inner__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+      display: block;
+    }
+  }
+
+  .team-inner__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .team-inner__list {
+    list-style: none;
+    color: #ffffff;
+    font-family: 'MyRoboto';
+    font-size: 21px;
+    line-height: 25px;
+
+    @media screen and (max-width: 1600px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .team-inner__item {
+    margin-bottom: 25px;
+    font-weight: 300;
+
+    > strong {
+      font-weight: 400;
+    }
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .team-inner__order {
+    margin-top: 50px;
+    text-align: center;
+
+    @media screen and (max-width: 1600px) {
+      margin-top: 30px;
+    }
+  }
+
+  .team-inner__row_1 {
+    flex: 1 0 36.84%;
+    max-width: 36.84%;
+    margin-right: 25px;
+
+    @media screen and (max-width: 1600px) {
+      flex: 1 0 33%;
+      max-width: 33%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      float: left;
+      width: 50%;
+      max-width: initial;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .team-inner__town {
+    font-size: 34px;
+    font-family: 'MyRoboto';
+    font-weight: 200;
+  }
+}

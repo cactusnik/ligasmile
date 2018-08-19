@@ -1,0 +1,81 @@
+.page.page_contact {
+  position: relative;
+  background-image: url('../images/header-bg.png');
+
+  .page__main {
+    padding-bottom: 115px;
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 50px;
+    }
+  }
+
+  .page__container {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 73px;
+    background-color: $color-accent;
+    background-image: url('../images/contact-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
+
+    @media screen and (max-width: 992px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 50px 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 40px 10px;
+    }
+  }
+
+  .page__content {
+    max-width: 940px;
+    margin: 0 auto;
+    color: #ffffff;
+  }
+
+  .page__text {
+    font-size: 21px;
+    line-height: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  .page__contacts {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .page__contact {
+    font-size: 25px;
+    line-height: 41px;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+
+    > a {
+      margin-left: 10px;
+      color: #ffffff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+}

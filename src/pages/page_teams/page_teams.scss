@@ -1,0 +1,155 @@
+.page.page_teams {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding-bottom: 180px;
+  background-image: url('../images/header-bg.png');
+
+  &:after {
+    content: url('../images/page-leadings-bg.png');
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 50px;
+  }
+
+  .page__header {
+    position: relative;
+    display: flex;
+    padding: 30px 100px;
+    background-color: $color-accent;
+    box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
+
+
+    @media screen and (max-width: 1600px) {
+      padding: 60px 50px 30px;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding: 40px 30px 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 20px 15px 30px;
+    }
+  }
+
+  .page__row_1 {
+    flex: 1 0 34%;
+    max-width: 34%;
+    margin-right: 70px;
+
+    @media screen and (max-width: 992px){
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      max-width: initial;
+    }
+  }
+
+  .page__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page__text {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 25px;
+    font-family: 'MyRoboto';
+    font-weight: 200;
+    margin: 50px 0;
+
+    @media screen and (max-width: 1200px){
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @media screen and (max-width: 480px){
+      margin: 40px 0;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .page__content {
+    max-width: 1520px;
+    margin: 0 auto;
+  }
+
+  .page__leadings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .page__leading {
+    width: calc((100% - 45px) / 4);
+    margin-bottom: 65px;
+    text-decoration: none;
+    box-shadow: 4.459px 4.015px 6px 0px rgba(4, 5, 5, 0.42);
+
+    &:hover {
+      .page__name-leading {
+        background-color: $color-accent;
+      }
+    }
+
+    @media screen and (max-width: 1200px){
+      width: calc((100% - 30px) / 3);
+    }
+
+    @media screen and (max-width: 768px){
+      width: calc((100% - 15px) / 2);
+      margin-bottom: 45px;
+    }
+
+    @media screen and (max-width: 480px){
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .page__wrap-img-leading {
+    font-size: 0;
+  }
+
+  .page__img-leading {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page__name-leading {
+    height: 75px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-secondary;
+    text-align: center;
+    font-size: 21px;
+    color: #ffffff;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+  }
+
+  .page__popup {
+    display: flex;
+    justify-content: center;
+  }
+}

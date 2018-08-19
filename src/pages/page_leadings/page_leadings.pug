@@ -1,0 +1,28 @@
+extends ../../layouts/layout-main/layout-main
+
+block content
+	.page.page_leadings
+		include ../../layouts/headers/header_other/header_other
+		main.page__main.container
+			.page__header
+				.page__row.page__row_1
+					.page__wrap-img
+						img.page__img(src='images/logo-leadings.png')
+				.page__row.page__row_2
+					p.page__text У кожній грі команди представляють один основний конкурс (об’ємне полотно), в якому бере участь тренер. Журі оцінює виступ команди вставанням. Кожне вставання – 1 бал. Максимально команда може отримати 6 балів, так як свою команду тренер не оцінює. Після основного конкурсу команди з нижньої частини турнірної таблиці грають батл, в результаті якого сезон покидає одна команда.
+						| В кожному наступному етапі сезону кількість конкурсів і батлів збільшується. Схема вибування стає жорсткішим.
+						| Кожна гра присвячена певній темі.
+					include ../../components/forms/form_search/form_search
+			.page__content
+				.page__leadings
+					- for(var i = 0; i < 8; i++) {
+						a.page__leading(href='#')
+							.page__wrap-img-leading
+								img.page__img-leading(src='images/leading1.png')
+							h2.page__name-leading Антон ЛІРНИК
+						- }
+				.page__popup
+					include ../../components/others/popup/popup_about/popup_about
+	include ../../components/modals/modal_email/modal_email
+	include ../../components/modals/modal_phone/modal_phone
+	include ../../layouts/footers/footer/footer

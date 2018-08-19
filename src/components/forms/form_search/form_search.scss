@@ -1,0 +1,47 @@
+.form.form_search {
+
+  .form__input {
+    width: auto;
+    height: 53px;
+    padding-left: 75px;
+    padding-right: 65px;
+    background-color: rgb(119, 15, 0);
+    border-radius: 20px;
+    box-shadow: 4.33px 2.5px 5px 0px rgba(4, 5, 5, 0.42);
+    color: #ffffff;
+    font-family: 'MyRoboto';
+    font-weight: 300;
+
+    @include placeholder {
+      color: #450303;
+      font-size: 16px;
+      font-family: 'MyRoboto';
+      font-weight: 300;
+      letter-spacing: 0.075rem;
+    }
+
+    @media screen and (max-width: 480px){
+      padding-left: 50px;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  .form__field_search {
+    position: relative;
+
+    &:before {
+      content: url('../images/search.png');
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 480px){
+        left: 5px;
+      }
+    }
+  }
+}

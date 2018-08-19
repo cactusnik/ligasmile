@@ -1,0 +1,42 @@
+.breadcrumbs {
+
+  .breadcrumbs__list {
+    display: flex;
+    list-style: none;
+  }
+
+  .breadcrumbs__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+
+      .breadcrumbs__link {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .breadcrumbs__link {
+    position: relative;
+    color: #ffffff;
+    font-family: 'MyRoboto';
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:after {
+      content: '/';
+      position: absolute;
+      top: 0;
+      right: -11px;
+    }
+  }
+}
