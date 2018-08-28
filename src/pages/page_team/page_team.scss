@@ -28,6 +28,7 @@
 
   .page__header {
     position: relative;
+    z-index: 2;
     padding: 100px 100px 63px;
     background-color: $color-accent;
 

@@ -1,11 +1,12 @@
-$call-icon: 0px 0px 0px 0px 64px 67px 260px 194px '../images/sprites/sprite.png';
-$leading-arrow-next: 89px 127px -89px -127px 20px 57px 260px 194px '../images/sprites/sprite.png';
-$leading-arrow-prev: 240px 0px -240px 0px 20px 57px 260px 194px '../images/sprites/sprite.png';
-$mail-icon: 149px 0px -149px 0px 66px 54px 260px 194px '../images/sprites/sprite.png';
-$main-arrow-next: 0px 92px 0px -92px 35px 102px 260px 194px '../images/sprites/sprite.png';
-$main-arrow-prev: 89px 0px -89px 0px 35px 102px 260px 194px '../images/sprites/sprite.png';
-$modal-x: 149px 79px -149px -79px 36px 36px 260px 194px '../images/sprites/sprite.png';
-$moon: 149px 140px -149px -140px 24px 24px 260px 194px '../images/sprites/sprite.png';
+$call-icon: 125px 0px -125px 0px 64px 67px 299px 227px '../images/sprites/sprite.png';
+$icon-play: 0px 0px 0px 0px 100px 100px 299px 227px '../images/sprites/sprite.png';
+$leading-arrow-next: 214px 61px -214px -61px 20px 57px 299px 227px '../images/sprites/sprite.png';
+$leading-arrow-prev: 214px 143px -214px -143px 20px 57px 299px 227px '../images/sprites/sprite.png';
+$mail-icon: 120px 125px -120px -125px 66px 54px 299px 227px '../images/sprites/sprite.png';
+$main-arrow-next: 0px 125px 0px -125px 35px 102px 299px 227px '../images/sprites/sprite.png';
+$main-arrow-prev: 60px 125px -60px -125px 35px 102px 299px 227px '../images/sprites/sprite.png';
+$modal-x: 214px 0px -214px 0px 36px 36px 299px 227px '../images/sprites/sprite.png';
+$moon: 275px 0px -275px 0px 24px 24px 299px 227px '../images/sprites/sprite.png';
 
 @mixin sprite-position($sprite) {
 $sprite-offset-x: nth($sprite, 3);

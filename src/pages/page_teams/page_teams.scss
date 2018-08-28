@@ -28,6 +28,7 @@
 
   .page__header {
     position: relative;
+    z-index: 2;
     display: flex;
     padding: 30px 100px;
     background-color: $color-accent;

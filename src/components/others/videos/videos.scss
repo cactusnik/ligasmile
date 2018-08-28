@@ -11,9 +11,30 @@
   }
 
   .videos__item {
+    position: relative;
     width: calc((100% - 45px) / 4);
     box-shadow: 6.688px 6.022px 21px rgba(4, 5, 5, 0.69);
     margin-bottom: 30px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      margin: auto;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      @include bg($icon-play);
+      transition: all .15s ease-in;
+    }
+
+    &:hover {
+      &:after {
+        transform: scale(0.8);
+        opacity: .5;
+      }
+    }
 
 
     @media screen and (max-width: 1200px){
