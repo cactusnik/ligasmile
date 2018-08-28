@@ -15,6 +15,16 @@
     font-family: 'MyRoboto';
     font-weight: 400;
     text-transform: uppercase;
+
+    @media screen and (max-width: 992px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
   }
 
   .modal__close {
@@ -24,5 +34,27 @@
     width: 35px;
     height: 35px;
     @include bg($modal-x);
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 30px 10px;
+  }
+
+  .mfp-close {
+    display: none;
+
+    @media screen and (max-width: 992px) {
+      display: block;
+      color: #ffffff;
+      font-size: 45px;
+    }
   }
 }
