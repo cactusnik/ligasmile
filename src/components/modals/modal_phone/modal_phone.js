@@ -35,8 +35,6 @@ function init() {
         open,
         close
     }
-
-    console.log('test');
 }
 
 

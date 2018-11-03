@@ -2,7 +2,6 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
-  padding-bottom: 180px;
   background-image: url('../images/header-bg.png');
 
   &:after {
@@ -16,14 +15,6 @@
     background-position: bottom left;
     background-size: contain;
     z-index: -1;
-  }
-
-  @media screen and (max-width: 992px) {
-    padding-bottom: 100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    padding-bottom: 50px;
   }
 
   .page__header {
@@ -90,6 +81,15 @@
   .page__content {
     max-width: 1520px;
     margin: 0 auto;
+    padding-bottom: 180px;
+
+    @media screen and (max-width: 992px) {
+      padding-bottom: 100px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding-bottom: 50px;
+    }
   }
 
   .page__leadings {

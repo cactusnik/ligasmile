@@ -15,7 +15,10 @@ const sliderMainSettings = {
                 prevEl: '',
             }
         }
-    }
+    },
+    autoplay: {
+        delay: 4000,
+    },
 };
 
 function init() {
