@@ -1,0 +1,46 @@
+.modal.modal_success {
+
+    .modal__header {
+        text-align: center;
+    }
+
+    .modal__link {
+        display: inline-block;
+        color: #ffffff;
+        margin-bottom: 32px;
+        font-size: 25px;
+        font-family: 'MyRoboto';
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 992px) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .modal__text {
+        margin-bottom: 32px;
+        font-size: 25px;
+        font-family: 'MyRoboto';
+        font-weight: 300;
+        text-transform: lowercase;
+
+        @media screen and (max-width: 992px) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}

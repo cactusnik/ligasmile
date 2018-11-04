@@ -30,10 +30,16 @@ module.exports = {
             items: {
                 src: `
                     <div class="modal modal_success">
-                      <div class="modal__text">${str}</div>
+                        <div class="modal__container">
+                            <div class="modal__close js-close-modal"></div>
+                            <div class="modal__header">
+                                <div class="modal__title">${str}</div>
+                            </div>
+                        </div>
                     </div>
                 `,
-                type: 'inline'
+                type: 'inline',
+                showCloseBtn: true
             }
         });
     }

@@ -13,39 +13,10 @@
   }
 
   .leading__container {
-    background-image: url('../images/leading-bg.png');
-    background-position: center 35px;
-    background-repeat: no-repeat;
-
-    @media screen and (max-width: 1600px) {
-      background-size: contain;
-    }
-
-    @media screen and (max-width: 992px) {
-      background-size: 175%;
-    }
-
-    @media screen and (max-width: 480px) {
-      background-size: 200%;
-    }
-
   }
 
   .leading__content {
-    width: 644px;
-    margin: 0 auto;
-
-    @media screen and (max-width: 1600px) {
-      width: 500px;
-    }
-
-    @media screen and (max-width: 768px) {
-      width: 70%;
-    }
-
-    @media screen and (max-width: 480px) {
-      width: 95%;
-    }
+    text-align: center;
   }
 
   .leading__title {

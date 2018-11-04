@@ -1,13 +1,7 @@
 .slider.slider_leading {
-  .slider__container {
-
-  }
-
-  .slider__img-wrap {
-    padding-bottom: 26px;
-  }
 
   .slider__img {
+    display: block;
     min-width: 100%;
     width: 100%;
     object-fit: cover;
@@ -18,7 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 120px;
@@ -28,6 +22,7 @@
     font-family: 'MyRoboto';
     font-weight: 300;
     text-align: center;
+    overflow: hidden;
 
     @media screen and (max-width: 1600px) {
       height: 90px;
@@ -38,22 +33,38 @@
     }
   }
 
+  .slider__list {
+    padding: 50px 0;
+  }
+
   .slider__item {
+    max-width: 500px;
     position: relative;
+    transition: all .3s ease-in-out;
+    &.swiper-slide-prev, &.swiper-slide-next {
+      opacity:0.5;
+      background-color: #000;
+    }
+
+    &.swiper-slide-active {
+      z-index: 1;
+      transform: scale(1.2);
+
+      .slider__title {
+        display: flex;
+      }
+    }
   }
 
   .slider__btn {
     position: absolute;
-    bottom: 32px;
+    top: 50%;
     z-index: 2;
     display: inline-block;
     width: 20px;
     height: 57px;
+    margin-top: -28px;
     cursor: pointer;
-
-    @media screen and (max-width: 1600px) {
-      bottom: 17px;
-    }
   }
 
   .slider__btn_prev {
@@ -67,4 +78,5 @@
     @include bg($leading-arrow-next);
     background-repeat: no-repeat;
   }
+
 }

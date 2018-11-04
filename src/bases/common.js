@@ -24,6 +24,8 @@ function init() {
     $(document).on('click', '.js-close-modal', function () {
         modal.closeModal();
     });
+
+    window.cactusnik.modal = modal || {}
 }
 
 module.exports = {
