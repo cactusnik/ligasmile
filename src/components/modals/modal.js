@@ -7,9 +7,7 @@ module.exports = {
             },
             type: 'inline',
             preloader: false,
-            fixedContentPos: true,
-            closeOnContentClick: false,
-            closeOnBgClick:false
+            fixedContentPos: true
         });
     },
     closeModal() {

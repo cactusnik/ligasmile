@@ -13,8 +13,6 @@ function init() {
         mainClass: 'mfp-rotate-in-right',
         removalDelay: 300,
         showCloseBtn: false,
-        closeOnContentClick: false,
-        closeOnBgClick:false,
         callbacks: {
             close: function() {
 

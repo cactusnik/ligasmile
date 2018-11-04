@@ -33,6 +33,7 @@
     top: -45px;
     width: 35px;
     height: 35px;
+    cursor: pointer;
     @include bg($modal-x);
 
     @media screen and (max-width: 992px) {
