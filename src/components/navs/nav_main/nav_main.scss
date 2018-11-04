@@ -31,96 +31,6 @@
   .nav__item {
     width: 220px;
 
-    &:nth-child(1) {
-      .nav__link {
-        position: relative;
-        background-color: rgb(119, 15, 0);
-
-        &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          top: 0;
-          z-index: 2;
-          display: block;
-          box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      .nav__link {
-        position: relative;
-        background-color: rgb(111, 16, 2);
-
-        &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          top: 0;
-          z-index: 2;
-          display: block;
-          box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
-        }
-      }
-    }
-
-    &:nth-child(3) {
-      .nav__link {
-        position: relative;
-        background-color: rgb(96, 14, 2);
-
-        &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          top: 0;
-          z-index: 2;
-          display: block;
-          box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
-        }
-      }
-    }
-
-    &:nth-child(4) {
-      .nav__link {
-        position: relative;
-        background-color: rgb(81, 12, 2);
-
-        &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          top: 0;
-          z-index: 1;
-          display: block;
-          box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
-        }
-      }
-    }
-
-    .nav__link {
-      &:hover {
-        position: relative;
-        z-index: 2;
-        background-color: $color-accent;
-      }
-
-      &.active {
-        position: relative;
-        z-index: 2;
-        background-color: $color-accent;
-      }
-    }
-
     @media screen and (max-width: 1600px) {
       width: 170px;
     }
@@ -147,13 +57,31 @@
     font-size: 16.67px;
     font-family: 'MyRoboto';
     font-weight: 300;
+    position: relative;
+    background-color: rgb(96, 14, 2);
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 2;
+      display: block;
+      box-shadow: 20.065px 18.067px 29px 0px rgba(4, 5, 5, 0.33);
+    }
 
     &:hover {
-      font-weight: 600;
+      position: relative;
+      z-index: 2;
+      background-color: $color-accent;
+    }
 
-      &:after {
-        content: 'none';
-      }
+    &.active {
+      position: relative;
+      z-index: 2;
+      background-color: $color-accent;
     }
 
     @media screen and (max-width: 1600px) {
